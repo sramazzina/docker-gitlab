@@ -247,8 +247,8 @@ gitlab_configure_database() {
   echo -n "Configuring gitlab::database"
 
   gitlab_finalize_database_parameters
-  gitlab_check_database_connection
-  gitlab_generate_postgresqlrc
+  # gitlab_check_database_connection
+  # gitlab_generate_postgresqlrc
   gitlab_uninstall_unused_database_client
 
   update_template ${GITLAB_DATABASE_CONFIG} \
